@@ -1,0 +1,11 @@
+/* Esta es mi hoja de estilos */
+main {
+padding: 8rem;
+border: 10px rgb(95, 49, 138) dotted;
+margin: 5rem;
+/* border-radius: 2rem; */
+}
+img {
+    object-fit: cover;
+    width: 100%;
+}
