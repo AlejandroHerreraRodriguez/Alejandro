@@ -1,0 +1,59 @@
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+svg{
+    width: 50%;
+
+}
+
+header {
+    background-color: rgb(157, 53, 93);
+}
+main{
+    background-color: rgb(111, 61, 157);
+}
+aside{
+    background-color: rgb(82, 62, 167);
+}
+footer{
+    background-color: rgb(59, 100, 170);
+}
+
+/* diseño responsivo con media queries, movil*/
+
+@media (max-width: 600px) {
+    
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 1rem;
+    }
+}
+    /* diseño responsivo con media queries, tablet vertical*/
+@media (min-width: 600px) {
+    #container {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 1rem;
+        grid-template-areas: 
+        "cabeza cabeza cabeza"
+        "principal principal lado"
+        "pie pie pie"
+        ;
+    }
+    header {
+        grid-area: cabeza;
+    }
+    main {
+        grid-area: principal;
+    }
+    aside {
+        grid-area: lado;
+    
+    }
+    footer {
+        grid-area: pie;
+    }
+}
